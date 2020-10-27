@@ -522,6 +522,7 @@ h3 {
   margin-bottom: 18px;
   display: block;
   font-family: "Pacifico", cursive;
+  text-shadow: -1px 2px 3px  rgb(12, 12, 12);
 }
 
 /* line 10, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_section_title.scss */
@@ -1231,6 +1232,7 @@ h3 {
   font-family: "Paytone One", sans-serif;
   font-weight: 400;
   color: #fff;
+  text-shadow: -1px 2px 3px  rgb(9, 9, 9);
 }
 
 /* line 71, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_slider.scss */
@@ -1242,6 +1244,7 @@ h3 {
   margin-bottom: 27px;
   color: #fff;
   font-family: "Paytone One", sans-serif;
+  text-shadow: -1px 5px 5px  rgb(7, 7, 7);
 }
 
 /* line 80, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_slider.scss */
@@ -2412,10 +2415,11 @@ h3 {
 .footer .footer_top .footer_widget .footer_title {
   font-size: 24px;
   font-weight: 700;
-  color: #1A0D01;
+  color: #b86c25;
   text-transform: capitalize;
   margin-bottom: 39px;
   font-family: "Montserrat", sans-serif;
+  text-shadow:4px 4px 4px  black;
 }
 
 /* line 29, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
@@ -2439,11 +2443,12 @@ h3 {
 
 /* line 39, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget .number {
-  color: #F0542C;
-  font-weight: 500;
+  color:#b86c25;
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 4px 4px 4px black;
 }
 
 /* line 46, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
@@ -2464,10 +2469,12 @@ h3 {
 
 /* line 56, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget p {
-  color: #6E6E6E;
-  font-size: 16px;
-  font-weight: 400;
+  color: #d6d2d2;
+  font-size: 18px;
+  font-weight: 470;
   line-height: 28px;
+  
+  
 }
 
 /* line 62, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
@@ -2644,7 +2651,7 @@ h3 {
 /* line 189, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
 .footer .socail_links ul li a {
   font-size: 18px;
-  color: #F0542C;
+  color: #b86c25;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -2656,8 +2663,12 @@ h3 {
   line-height: 40px !important;
   margin-right: 10px;
   line-height: 50px !important;
-  border: 1px dashed #F0542C;
+  border: 1px dashed #cb6e17;
 }
+.footerBackcolor{
+  background-color: rgb(27, 30, 38);
+}
+
 
 /* line 202, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_footer.scss */
 .footer .socail_links ul li a:hover {
@@ -2778,7 +2789,7 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  
+  box-shadow: 0px 0px 18px 4px black;
   
 }
 
@@ -2842,9 +2853,11 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  
-  color: #6E6E6E;
+  border-bottom: solid 2px black;
+  padding-bottom: 15px;
+  color: #535252;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 0px 0px 1px black;
 }
 
 
@@ -3156,6 +3169,24 @@ h3 {
     width: 100%;
   }
 }
+/* @media (min-width: 768px) and (max-width: 991px){
+.fotterAdress{
+  position: relative;
+  margin-left:30% ;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .fotterAdress{
+    position: relative;
+    margin-left:30% ;
+  }
+  }
+@media (min-width: 992px) and (max-width: 2200px){
+  .fotterAdress{
+    position: relative;
+    margin-left:40% ;
+  }
+  } */
 
 /* line 97, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_gallery.scss */
 .gallery_area .single_gallery:hover::before {
@@ -3385,7 +3416,10 @@ h2 {
 
 /* line 101, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_elements.scss */
 h3 {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 600;
+  
+  text-shadow: -1px 2px 3px  rgb(32, 33, 36);
 }
 
 /* line 105, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_elements.scss */
