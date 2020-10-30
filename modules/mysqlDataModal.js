@@ -21,8 +21,8 @@ function connect() {
                 host: 'localhost',
                 port: 3306,
                 user: 'root',
-                password: '123456789',
-                database: 'menu_db'
+                password: '12345678',
+                database: 'restaurant_menu'
             })
             con.connect(error => {
                 if (error) {

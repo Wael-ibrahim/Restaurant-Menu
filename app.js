@@ -63,7 +63,7 @@ app.get('/dashboard', (req, res) => {
      const now = new Date()
 
      
-     //console.log(now);
+     console.log(now);
 
 
      
