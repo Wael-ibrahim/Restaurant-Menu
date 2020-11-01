@@ -58,9 +58,9 @@ function dataSender(table_number, fname, lname, email, telephone, address, city,
             resolve()
         }).catch(error => {    
             if (error.errno === 1062) {
-                reject(4)
+                reject('exist')
             } else {
-                reject(2)
+                reject(error)
             }
             
         })

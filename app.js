@@ -60,15 +60,13 @@ app.get('/dashboard', (req, res) => {
      const city = req.body.city
      const zip = req.body.zip
      //const now = (new Date()).toJSON().replace(/\..*$/g,'')
-     const now = new Date()
-
-     
-     console.log(now);
+    //  const now = new Date()
+    
 
 
      
-     if(tablenumber && fname && lname && email || telephone && address && city && zip && now) {
-        sendData.dataSender(tablenumber, fname, lname, email, telephone, address, city, zip, now ).then(()=>{
+     if(tablenumber && fname && lname && email || telephone && address && city && zip) {
+        sendData.dataSender(tablenumber, fname, lname, email, telephone, address, city, zip).then(()=>{
           
                 res.json(1);
             
