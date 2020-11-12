@@ -20,9 +20,9 @@ function connect() {
                 multipleStatements: true,
                 host: 'localhost',
                 port: 3306,
-                user: 'root',
-                password: '12345678',
-                database: 'restaurant_menu'
+                user: 'codings2_highclass',
+                password: '!234qweR',
+                database: 'codings2_highclass'
             })
             con.connect(error => {
                 if (error) {

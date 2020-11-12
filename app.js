@@ -31,22 +31,23 @@ app.get('/index1', (req, res) => {
 });
 
 app.get('/admin', (req, res) => {
-    if (req.session.user){
-        console.log(req.session.user);
-        res.redirect('/admin')
-    } else {
-        res.render('admin')
-    }
+    res.render('admin')
 
 });
 
 app.get('/dashboard', (req, res) => {
-    sendData.getData().then((result) => {
-        res.render('dashboard', {result});
-        console.log(result);
-    }).catch(error => {
-        res.send('404');
-    })
+
+    if (req.session.user){
+        sendData.getData().then((result) => {
+            res.render('dashboard', {result});
+            console.log(result);
+        }).catch(error => {
+            res.send('404');
+        })
+    } else {
+        res.redirect('/admin')
+    }
+    
     
 });
  app.post('/submit', (req, res) => {
