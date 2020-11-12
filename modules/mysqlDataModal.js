@@ -51,10 +51,10 @@ function runQuery(queryString) {
     })
 }
 
-function dataSender(table_number, fname, lname, email, telephone, address, city, zip, date) {
+function dataSender(table_number, fname, lname, email, telephone, address, city, zip) {
     return new Promise((resolve, reject) => {
         runQuery(`INSERT INTO users (table_number, fname, lname, email, telephone, address, city, zip, date) VALUES 
-        ('${table_number}', '${fname}', '${lname}', '${email}', '${telephone}', '${address}', '${city}', '${zip}', '${date}')`).then(() => {
+        ('${table_number}', '${fname}', '${lname}', '${email}', '${telephone}', '${address}', '${city}', '${zip}', now())`).then(() => {
             resolve()
         }).catch(error => {    
             if (error.errno === 1062) {
@@ -70,7 +70,7 @@ function dataSender(table_number, fname, lname, email, telephone, address, city,
 function checkUser(user_name, password) {
     return new Promise((resolve, reject) => {
         runQuery(`SELECT * FROM admin where user_name like '${user_name}'`).then((result) => {
-            if(result === 0) {
+            if(result.length === 0) {
                 reject(4)
             } else {
                 if(password === result[0].password) {

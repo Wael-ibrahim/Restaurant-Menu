@@ -60,7 +60,8 @@ app.get('/dashboard', (req, res) => {
      const city = req.body.city
      const zip = req.body.zip
      //const now = (new Date()).toJSON().replace(/\..*$/g,'')
-    //  const now = new Date()
+   
+
     
 
 
